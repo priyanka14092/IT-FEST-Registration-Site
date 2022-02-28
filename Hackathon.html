@@ -1,0 +1,122 @@
+<html>
+<head>
+	<title>Registration Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/icon" href="Images/logo.jpg">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="Header">
+		<h1 style="font-size:40px;"><b><center>IT FEST  (We are the Dreamers of Dreams)</center></b></h1>
+		<h5 style="font-size:15px;"><b>17th-19th January, 2021</b></h1>
+		<div class="navbar">
+			<a href="Index.html">Home</a>
+        		<a href="Competition.html">Competitions</a>
+			<a href="Registration.html">Click to Register</a>
+		</div>
+		<img src="Images/header.jpeg" alt="Header" Height="90%" width="100%"></img>
+	</div>
+	<br><br>
+	<h1><center>Registration Form for Hackathon</center></h1>
+	<br>
+	<b><div class="container">
+	<form action = "dbHackathon.php" method = "POST">
+	<div class="row1">
+		<div class="col-25">
+		<label for="fname"><b>First Name</b></label>
+	</div>
+	<div class="col-75">
+		<input type="text" id="fname" name="firstname" placeholder="Your name">
+	</div>
+	</div>
+	<div class="row1">
+	<div class="col-25">
+		<label for="lname"><b>Last Name</b></label>
+	</div>
+	<div class="col-75">
+		<input type="text" id="lname" name="lastname" placeholder="Your last name">
+	</div>
+	</div>
+	<div class="row1">
+	<div class="col-25">
+		<label for="email"><b>Email Address</b></label>
+	</div>
+	<div class="col-75">
+		<input type="text" id="email" name="email" placeholder="Your email">
+	</div>
+	</div>
+	<div class="row1">
+	<div class="col-25">
+		<label for="phone"><b>Phone Number</b></label>
+	</div>
+	<div class="col-75">
+		<input type="text" id="phone" name="phone" placeholder="Your phone number">
+	</div>
+	</div>
+	<div class="row1">
+	<div class="col-25">
+		<label for="gender"><b>Gender</b></label>
+	</div>
+	<div class="col-75">
+		<input type="radio" id="gender" name="gender" value="Male" checked>Male
+		<input type="radio" id="gender" name="gender" value="Female">Female
+		<input type="radio" id="gender" name="gender" value="Other">Other
+	</div>
+	</div>
+	<div class="row">
+	<div class="col-25">
+		<label for="country"><b>Country</b></label>
+	</div>
+	<div class="col-75">
+		<input type="text" id="country" name="country" placeholder="Your country">
+	</div>
+	</div>
+	<div class="row1">
+	<div class="col-25">
+		<label for="course"><b>Course Name</b></label>
+	</div>
+	<div class="col-75">
+		<select id="course" name="course">
+			<option value="bca">BCA</option>
+			<option value="bsc">BSc</option>
+			<option value="btech">B.Tech</option>
+			<option value="mca">MCA</option>
+			<option value="msc">MSc</option>
+			<option value="mtech">M.Tech</option>
+		</select>
+	</div>
+	</div>
+	<div class="row1">
+	<div class="col-25">
+		<label for="institute"><b>Institute Name</b></label>
+	</div>
+	<div class="col-75">
+		<input type="text" id="institute" name="institute" placeholder="Your institute">
+	</div>
+	</div>
+	<div class="row1">
+	<div class="col-25">
+		<label for="year"><b>Passing Year</b></label>
+	</div>
+	<div class="col-75">
+		<input type="text" id="year" name="year" placeholder="Your passing year">
+	</div>
+	</div>
+	<div class="row">
+	<div class="col-25">
+		<label for="competition"><b>Competition Name</b></label>
+	</div>
+	<div class="col-75">
+		<select id="competition" name="competition">
+			<option value="hackathon">Hackathon</option>
+		</select>
+	</div>
+	</div>
+	<br>
+	<div class="row1">
+		<input type="submit" value="SUBMIT">
+	</div>
+	</form>
+	</div></b>
+</body>
+</html>

@@ -1,0 +1,382 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding:0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.Header{
+	font-size: 18px;
+	font-style: normal;
+	padding: 1px;
+	background: #31525B;
+	color: white;
+}
+
+.navbar{
+	display: flex;
+	float: right; 
+}
+
+.navbar a{
+	color: white;
+	padding: 16px 16px;
+	text-decoration: none; 
+	font-size: 18px; 
+	font-style: normal;
+}
+
+.navbar a:hover{
+	text-decoration:underline;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.Introduction{
+  	display: flex;
+  	align-items: center;
+  	background-color: #E0E5E9;
+	height: 400px;
+}
+
+input[type=submit]{
+	color: white;
+	text-decoration: none; 
+	background-color: #2F365F;
+	font-size: 16px; 
+	padding: 10px;
+	font-style: normal;
+	border-radius: 2px;
+	float: right;
+}
+
+input[type=submit]:hover{
+  	text-decoration: none;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+label{
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+}
+
+input[type=text], select, textarea{
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+	
+.container{
+	border-radius: 5px;
+	background-color: #E0E5E9;
+	padding: 30px 80px 30px 80px;
+}
+
+.col-25{
+	float: left;
+	width: 15%;
+	margin-top: 6px;
+	color: #2F365F;
+}
+		
+.col-75{
+	float: left;
+	width: 85%;
+	margin-top: 6px;
+	padding:10px; 
+	color: #2F365F;
+}
+
+.row1:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.card{
+	transition: 0.3s;
+  	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+	padding: 16px;
+	text-align: center;
+ }
+
+.card:hover{
+  	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+		
+.card a{
+	color: white;
+	text-decoration: none; 
+	color: #2F365F;
+	font-size: 16px; 
+	padding: 10px;
+	font-style: normal;
+	border-radius: 2px;
+}
+
+.card a:hover{
+  	text-decoration: underline;
+}
+
+.column{
+  	float: left;
+  	width: 25%;
+  	padding: 0 10px;
+}
+
+.c{
+  	float: left;
+  	width: 33%;
+  	padding: 0 10px;
+}
+
+.r{
+	margin: 0 -5px;
+}
+
+.r:after{
+  	content: "";
+  	display: table;
+  	clear: both;
+}
+		
+.side{
+	flex: 50%;
+	align-items: center;background-color: #E0E5E9;
+  	<!--background-color: #E0E5E9;-->
+	height: 400px;
+	<!--background-color: #cfcfc4;-->
+}
+
+.side a{
+	color: white;
+	text-decoration: none; 
+	background-color: #2F365F;
+	font-size: 16px; 
+	padding: 10px;
+	font-style: normal;
+	border-radius: 2px;
+}
+
+.side a:hover{
+  	text-decoration: none;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.main{
+	flex: 25%;
+	align-items: center;
+	justify-content: space-around;
+  	align-content: space-around;
+	<!--background-color: #E0E5E9;-->
+	height: 400px;
+	<!--background-color: #cfcfc4;-->
+}
+
+.main a{
+	color: white;
+	text-decoration: none; 
+	background-color: #2F365F;
+	font-size: 16px; 
+	padding: 10px;
+	font-style: normal;
+}
+
+.main a:hover{
+  	text-decoration: none;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.col{
+	flex: 25%;
+	align-items: center;
+	justify-content: space-around;
+  	align-content: space-around;
+	<!--background-color: #E0E5E9;-->
+	height: 400px;
+	<!--background-color: #cfcfc4;-->
+}
+
+.col a{
+	color: #2F365F;
+	text-decoration: none; 
+	<!--background-color: #2F365F;-->
+	font-size: 18px; 
+	font-weight:bolder;
+	padding: 10px;
+	font-style: normal;
+}
+
+.col a:hover{
+	text-decoration: underline;
+}
+
+.Img{
+  	padding: 50px;
+}
+
+ul{
+  	list-style: none;
+}
+
+ul li::before{
+  	content: "\2022";
+  	color: #748B6F;
+	font-size:20px;
+  	display: inline-block; 
+  	width: 1em;
+  	margin-left: -1em;
+}
+
+.slides{
+    	padding: 0;
+    	width: 30%;
+    	height: 350px;
+    	display: block;
+    	margin: 0 auto;
+    	position: relative;
+}
+
+.slides *{
+    	user-select: none;
+    	-ms-user-select: none;
+    	-moz-user-select: none;
+    	-khtml-user-select: none;
+    	-webkit-user-select: none;
+    	-webkit-touch-callout: none;
+}
+
+.slides input{ 
+	display: none; 
+}
+
+.slide-container{ 
+	display: block; 
+}
+
+.slide{
+    	top: 0;
+    	opacity: 0;
+    	width: 100%;
+    	height: 450px;
+    	display: block;
+    	position: absolute;
+	transform: scale(0);
+	transition: all .7s ease-in-out;
+}
+
+.slide img{
+    	width: 100%;
+    	height: 450px;
+}
+
+.nav label{
+    	width: 50px;
+    	height: 300px;
+    	display: none;
+    	position: absolute;
+	opacity: 0;
+    	z-index: 9;
+    	cursor: pointer;
+	transition: opacity .2s;
+	color: #FFF;
+    	font-size: 156pt;
+    	text-align: center;
+    	line-height: 380px;
+    	background-color: rgba(255, 255, 255, .3);
+    	text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label{ 
+	opacity: 0.5; 
+}
+
+.nav label:hover{ 
+	opacity: 1; 
+}
+
+.nav .next{ 
+	right: 0; 
+}
+
+input:checked + .slide-container  .slide 
+{
+    	opacity: 1;
+	transform: scale(1);
+	transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label{ 
+	display: block; 
+}
+
+.nav-dots{
+	width: 100%;
+	bottom: 9px;
+	height: 11px;
+	display: block;
+	position: absolute;
+	text-align: center;
+}
+
+.nav-dots .nav-dot{
+	top: -5px;
+	width: 11px;
+	height: 11px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover{
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6{
+	background: rgba(0, 0, 0, 0.8);
+}
+
+
+.footer{
+  	padding: 20px;
+  	text-align: center;
+  	background: #ddd;
+}
+
+@media screen and (max-width: 700px){
+  	.row, .navbar, .Introduction, .Healthcare{   
+    		flex-direction: column;
+		padding: 0px;
+  	}
+}
+
+@media screen and (max-width: 600px){
+  	.column, .c{
+    		width: 100%;
+    		display: block;
+    		margin-bottom: 20px;
+  	}
+}
+
+@media screen and (max-width: 600px) {
+	.col-25, .col-75, input[type=submit] {
+		width: 100%;
+		margin-top: 0;
+	}
+}
